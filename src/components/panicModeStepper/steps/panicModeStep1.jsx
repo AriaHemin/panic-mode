@@ -20,6 +20,7 @@ export function PanicModeStep1(props) {
 
     return (
         <div className="pb-10  flex flex-col justify-between h-full" >
+            <div className="text-xl font-bold">do a brain dump !</div>
             <div className="overflow-y-auto h-96 p-4 m-2 " >{
                     brainDumpList.map((item)=>{
                         return(
