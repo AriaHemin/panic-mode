@@ -19,8 +19,10 @@ json database structure
         }
 
     }
-
-
-
-
 ]
+
+ok so tasks:
+1. making the sessions 
+2. displaying the sessions 
+3. starting the sessions 
+
