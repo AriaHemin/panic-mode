@@ -17,7 +17,7 @@ function App() {
 				setIsModalActive(true)
 			}}
         >
-          	start panic mode session
+          	make a panic mode session
         </div>
         <Modal isModalActive={isModalActive} setIsModalActive={setIsModalActive} innerComp={innerComp} />
       </div>
