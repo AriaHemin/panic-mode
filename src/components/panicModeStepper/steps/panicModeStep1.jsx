@@ -8,9 +8,6 @@ export function PanicModeStep1(props) {
     
     const element = ref.current
    
-    useEffect(()=>{
-        console.log(brainDumpList.length)
-    },[])
 
     function addItem (){
         setBrainDumpList([...brainDumpList, {title: userInput, key: brainDumpList.length + 1}])
@@ -25,7 +22,7 @@ export function PanicModeStep1(props) {
                     brainDumpList.map((item)=>{
                         return(
                             <div key={item.key} className="flex flex-row justify-between" >
-                                <p>{item.title} : {item.key}</p>
+                                <p>{item.key}. {item.title} </p>
                                 
                             </div>
                         )
