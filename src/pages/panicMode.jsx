@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { useStepper } from "../hooks/useStepper"
 import { PanicModeStep1 } from "../components/panicModeStep1"
 import { PanicModeStep2 } from "../components/panicModestep2"
@@ -8,13 +8,13 @@ function PanicMode() {
 	const [brainDumpList, setBrainDumpList] = useState([]);
 	const { currentStep ,step, goNextStep , goPreviousStep , steps} = useStepper([
         <PanicModeStep1 brainDumpList={brainDumpList} setBrainDumpList={setBrainDumpList} />,
-        <PanicModeStep2  />,
+        <PanicModeStep2  brainDumpList={brainDumpList} setBrainDumpList={setBrainDumpList} />,
         <PanicModeStep3  />
     ])
 
 
   	return (
-    <div className="fixed inset-0 w-screen h-screen bg-black text-white">
+    <div className="fixed inset-0 w-screen h-screen ">
       <div className="p-5" >
                 {step}
             </div>

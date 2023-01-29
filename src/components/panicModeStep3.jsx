@@ -1,7 +1,7 @@
 export function PanicModeStep3 (){
 
     return(
-        <div className="bg-red-300" >
+        <div className="" >
             page 3
         </div>
     )
