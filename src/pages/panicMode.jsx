@@ -9,7 +9,7 @@ function PanicMode() {
 	const { currentStep ,step, goNextStep , goPreviousStep , steps} = useStepper([
         <PanicModeStep1 brainDumpList={brainDumpList} setBrainDumpList={setBrainDumpList} />,
         <PanicModeStep2  brainDumpList={brainDumpList} setBrainDumpList={setBrainDumpList} />,
-        <PanicModeStep3  />
+        <PanicModeStep3  brainDumpList={brainDumpList} setBrainDumpList={setBrainDumpList} />
     ])
 
 

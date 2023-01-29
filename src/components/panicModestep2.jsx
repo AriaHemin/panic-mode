@@ -28,7 +28,12 @@ export function PanicModeStep2 (props){
                         </div>
                         <div className="mx-4" >{item.title}</div>
                     </div>
-                    <div className="mx-2" >x</div>
+                    <div onClick={()=>{
+                        let index = brainDumpList.indexOf(item)
+                        brainDumpList.splice(index, 1)
+                        setBrainDumpList(brainDumpList)
+                        setCount(count + 1)
+                    }} className="mx-2" >x</div>
                 </div>
             )
         }))
