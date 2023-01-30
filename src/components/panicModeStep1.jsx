@@ -17,8 +17,9 @@ export function PanicModeStep1(props) {
     }
     return (
         
-
+        
         <div className="" >
+            <h1 className="text-xl font-bold">do a brain dump</h1>
             <div className="overflow-y-auto h-96 p-4 m-2 " >{
                     brainDumpList.map((item)=>{
                         return(

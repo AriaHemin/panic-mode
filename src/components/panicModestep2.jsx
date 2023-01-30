@@ -61,6 +61,7 @@ export function PanicModeStep2 (props){
     
     return(
         <div className="" >
+            <h1 className="text-xl font-bold">order the tasks</h1>
             {
                 lol
             }
